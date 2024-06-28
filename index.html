@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WMAD Survey Form 2023</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="survey-box">
+        <header>
+          <div class="header-1"></div>
+          <div class="header-2">
+            <h1 class="header-h1">WMAD Survey Form 2023</h1>
+          </div>
+        </header>
+
+        <div class="box">
+          <h2 style="color: white;">DASHBOARD</h2>
+
+          <div id="respon" style="font-size: 30px;"></div>
+
+          <div id="experian" style="font-size: 30px;"></div>
+
+          <form action="" id="surveyForm">
+            <div id="grade" style="margin-top: 20px">
+              <label style="font-size: 30px;">What is your current grade?</label><br />
+              <br />
+              <select id="selectGrade" onclick="myGrade()">
+                <option selected disabled>Grade</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12">Grade 12 (Failed)</option>
+                <option value="Grade 12 (failed)">Grade 12 (Passed)</option>
+              </select>
+              <div id="gradeAnswer" style="font-size: 30px;"></div>
+            </div>
+
+            <div id="schoolType" style="margin-top: 20px" >
+              <label style="font-size: 30px;">What is your current school type?</label>
+              <br />
+              <br />
+              <select id="selectSchool" onclick="mySchool()">
+                <option selected disabled>School Type</option>
+                <option value="Public School">Public School</option>
+                <option value="Private School">Private School</option>
+              </select>
+              <div id="schoolAnswer" style="font-size: 30px;"></div>
+            </div>
+          </form>
+        </div>
+        <p class="p">
+          This form was created inside of Pour un sourire d'enfant.
+        </p>
+        <h3 class="h3" style="font-size: 40px; margin-top: 20px;">Survey Form</h3>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
